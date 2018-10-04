@@ -1,46 +1,43 @@
 #include <iostream>
-
+#include "Classes.h"
 using namespace std;
-
-class Character {
-public:
-	void flip() { cout << "I know how to flip and I will flipping do it" << endl; }
-	virtual void walk() { cout << "just in case they are too young to walk yet" << endl; }
-	virtual void fly() = 0; //pure virtual function
-};
-
-class Orc : public Character {
-public:
-	void barrelRoll() { cout << "rooooooolllllllllllinggggggg" << endl; }
-	void walk() { cout << "Doopers have a really cool walk!" << endl; }
-	void fly() { cout << "Dooper is flapping and flying" << endl; }
-};
-
-class Troll : public Character {
-public:
-	void fly() { cout << "Average Dooper is flapping and flying" << endl; }
-};
-
 int main(void)
 {
+	bool characterSelection{ true };
+	int characterSelect{ 0 };
+	cout << "Please select to play as an orc or whether to play as a troll. To select an orc press 1 and to select a troll press 2" << endl;
+	cin >> characterSelect;
+
+	Troll troll;
+	Orc orc;
 	cout << "Let go virtual" << endl;
 	//Character character;
 	//character.flip();
 	//character.walk();
+	
+	if (characterSelect == 1)
+	{
+		
 
-	cout << "Let go create an Orc" << endl;
-	Orc orc;
-	orc.walk();
-	orc.fly();
-	orc.flip();
+		
+		cout << "Let go create an Orc" << endl;
+		orc.characterCreation();
+		characterSelection = false;
+		orc.walk();
+		orc.fly();
+		orc.flip();
+	}
 
-	cout << "Let go create an Troll" << endl;
-	Troll troll;
-	troll.walk();
-	troll.fly();
-	troll.flip();
+	if (characterSelect == 2)
+	{
+		cout << "Let go create an Troll" << endl;
+		
+		troll.walk();
+		troll.fly();
+		troll.flip();
+	}
 
-	Character* npc = &orc;
+	/*Character* npc = &orc;
 	npc->flip();
 	npc->fly();
 	npc->walk();
@@ -48,7 +45,10 @@ int main(void)
 	npc = &troll;
 	npc->flip();
 	npc->fly();
-	npc->walk();
+	npc->walk();*/
 
 	cin.get();
+
+	system("pause");
 }
+
