@@ -21,9 +21,21 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files\Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="troll.cpp">
+      <Filter>Source Files\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="orc.cpp">
+      <Filter>Source Files\Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="troll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

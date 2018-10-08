@@ -1,4 +1,8 @@
 #include "Classes.h"
+#include "orc.h"
+#include "troll.h"
+
+using namespace std;
 
 int Character::getSpellDmgNum()
 {
@@ -14,8 +18,8 @@ int Character::getDefence()
 {
 	return m_shield;
 }
-
-void Orc::setCharacterName()
+std::string Character::setName()
 {
-
+	cout << "Enter the name of you charcater: " << endl;
+	return characterName;
 }

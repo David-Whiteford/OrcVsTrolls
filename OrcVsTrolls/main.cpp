@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Classes.h"
+#include "orc.h"
+#include "troll.h"
 using namespace std;
 int main(void)
 {
@@ -17,15 +19,12 @@ int main(void)
 	
 	if (characterSelect == 1)
 	{
-		
-
-		
 		cout << "Let go create an Orc" << endl;
-		orc.characterCreation();
+		orc.setName();
 		characterSelection = false;
-		orc.walk();
+	/*	orc.walk();
 		orc.fly();
-		orc.flip();
+		orc.flip();*/
 	}
 
 	if (characterSelect == 2)
@@ -35,7 +34,10 @@ int main(void)
 		troll.walk();
 		troll.fly();
 		troll.flip();
+		
 	}
+
+	
 
 	/*Character* npc = &orc;
 	npc->flip();
