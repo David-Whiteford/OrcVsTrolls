@@ -118,7 +118,6 @@
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="orc.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="troll.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -24,9 +24,6 @@
     <ClCompile Include="orc.cpp">
       <Filter>Source Files\Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
