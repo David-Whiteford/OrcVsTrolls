@@ -1,0 +1,7 @@
+﻿  Character.cpp
+  main.cpp
+c:\users\dave2\desktop\orcvstrolls-master\orcvstrolls\main.cpp(31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  orc.cpp
+  troll.cpp
+  Generating Code...
+  OrcVsTrolls.vcxproj -> C:\Users\dave2\Desktop\OrcVsTrolls-master\x64\Debug\OrcVsTrolls.exe
