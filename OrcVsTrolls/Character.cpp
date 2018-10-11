@@ -2,31 +2,25 @@
 #include "Character.h"
 #include "orc.h"
 #include "troll.h"
-#include "Player.h"
+
 
 using namespace std;
-
+//function for getting spells damage
 int Character::getSpellDmgNum()
 {
 	return m_spells;
 }
-
+//function for getting melee damage
 int Character::getMeleeDmgNum()
 {
 	return m_melee;
 }
-
+//function for getting defence 
 int Character::getDefence()
 {
 	return m_shield;
 }
-std::string Character::setName()
-{
-	cout << "Enter the name of you charcater: " << endl;
-	return 0;
-}
-//int Character::getHealth()
-//{
-//	return m_health;
-//}
+
+
+
 

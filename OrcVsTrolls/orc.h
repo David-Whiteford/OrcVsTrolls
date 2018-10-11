@@ -1,17 +1,16 @@
 #pragma once
 #include "Character.h"
-
+//orc class part of player class
 class Orc : public Character 
 {
 public:
 
 	void characterCreation() { cout << "Set the name of your orc" << endl; }
-	void barrelRoll() { cout << "rooooooolllllllllllinggggggg" << endl; }
-	void walk() { cout << "Doopers have a really cool walk!" << endl; }
-	void fly() { cout << "Dooper is flapping and flying" << endl; }
+	//set function foor the orc
 	void setHealth(int t_health);
+	//get function foor the orc
 	int getHealth();
 private:
-	
-	int m_health{ 10 };
+	//variables
+	int m_health{ 20 };
 };
